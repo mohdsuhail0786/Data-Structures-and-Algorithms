@@ -23,7 +23,7 @@ public class Palindromic_SubStrings{
  * FOR ODD LENGTH==> initialize two pointers l=i and r=i. Now check if str[l]==str[r] and increment count till l & r in bounds
  * FOR EVEN LENGTH==> initialize two pointers l=i and r=i+1. Now check if str[l]==str[r] and increment count till l & r in bounds
  * 
- * TC ==> O(n^2) SC ==> O(1)
+ * TC ==> O(n^2) && SC ==> O(1)
  */
 
 class Solution {
