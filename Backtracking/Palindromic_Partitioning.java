@@ -22,7 +22,7 @@ public class Palindromic_Partitioning {
 
 /**APPROACH
  * iterate over the string and find the prefix.
- * Now check this prefix is palindrome or not if yes then call recursively for remaining string.
+ * Now check this prefix is palindrome or not if yes then add it to the list and call recursively for remaining string after that remove the added prefix.
  * Otherwise do nothing.
  */
 
