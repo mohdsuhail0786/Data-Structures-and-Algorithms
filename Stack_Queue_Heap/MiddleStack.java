@@ -1,3 +1,9 @@
+/**
+ * Design a stack with operations on middle element such that 
+ * findMiddleElement() takes O(1) time and
+ * deleteMiddleElement() takes O(1) time
+ */
+
 public class MiddleStack{
     DoublyNode top=null,mid=null;
     int count=0;
