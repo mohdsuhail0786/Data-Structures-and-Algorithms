@@ -10,7 +10,7 @@ public class Permutations_of_a_String {
     public static void main(String[] args) {
         Scanner scan=new Scanner(System.in);
         String s=scan.next();
-        Solution obj = new Solution();
+        Solution_perm_of_string obj = new Solution_perm_of_string();
         List<String> result=new ArrayList<>();
         result=obj.find_permutation(s);
         System.out.println("Permutations of the given string are: "+result);
@@ -24,7 +24,7 @@ public class Permutations_of_a_String {
  * and also again swap the elements to acquire original string
  */
 
-class Solution {
+class Solution_perm_of_string {
     public List<String> find_permutation(String S) {
         List<String> Permutations = new ArrayList<>();
         generatePermutations(S,0,Permutations);

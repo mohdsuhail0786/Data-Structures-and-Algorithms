@@ -16,7 +16,7 @@ import java.util.*;
 public class Paths_from_start_to_end_of_matrix {
     public static void main(String[] args) {
         Scanner scan=new Scanner(System.in);
-        Solution obj = new Solution();
+        Solution_path_start_end obj = new Solution_path_start_end();
         int m=scan.nextInt();
         int n=scan.nextInt();
         int[][] mat=new int[m][n];
@@ -41,7 +41,7 @@ public class Paths_from_start_to_end_of_matrix {
  * same as rat in a maze
  */
 
-class Solution {
+class Solution_path_start_end {
     public int[][] printAllPaths(int[][] mat, int m, int n) {
      	List<List<Integer>> result=new ArrayList<>();
         helper(mat,m,n,0,0,result,new ArrayList<>());

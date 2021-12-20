@@ -12,7 +12,7 @@ public class Palindromic_Partitioning {
     public static void main(String[] args) {
         Scanner scan=new Scanner(System.in);
         String s=scan.next();
-        Solution obj = new Solution();
+        Solution_palindromic_partitioning obj = new Solution_palindromic_partitioning();
         List<List<String>> partitions = new ArrayList<>();
         partitions=obj.partition(s);
         System.out.println("Palindromic partitions are: "+partitions);
@@ -26,7 +26,7 @@ public class Palindromic_Partitioning {
  * Otherwise do nothing.
  */
 
-class Solution {
+class Solution_palindromic_partitioning {
     public List<List<String>> partition(String s) {
         List<List<String>> result=new ArrayList<>();
         helper(s,result,new ArrayList<>());

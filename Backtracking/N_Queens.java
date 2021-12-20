@@ -16,7 +16,7 @@ public class N_Queens {
     public static void main(String[] args) {
         Scanner scan=new Scanner(System.in);
         int n=scan.nextInt();
-        Solution obj = new Solution();
+        Solution_n_queens obj = new Solution_n_queens();
         List<List<String>> solutions = new ArrayList<>();
         solutions=obj.solveNQueens(n);
         System.out.println("Solution to n queens are: "+solutions);
@@ -30,7 +30,7 @@ public class N_Queens {
  * before placing a queen, check that queen is safe at that position or not, if safe then fill it
  */
 
-class Solution {
+class Solution_n_queens {
     public List<List<String>> solveNQueens(int n) {
         List<List<String>> result=new ArrayList<>();
         int[][] m=new int[n][n];

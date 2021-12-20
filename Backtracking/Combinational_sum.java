@@ -19,7 +19,7 @@ public class Combinational_sum {
     public static void main(String[] args) {
         Scanner scan=new Scanner(System.in);
         int n=scan.nextInt();
-        Solution obj = new Solution();
+        Solution_combinational_sum obj = new Solution_combinational_sum();
         ArrayList<Integer> lis=new ArrayList<>();
         for(int i=0;i<n;i++){
             lis.add(scan.nextInt());
@@ -38,7 +38,7 @@ public class Combinational_sum {
  * the only difference is we have to include a element till it is in the range of given sum
  */
 
-class Solution
+class Solution_combinational_sum
 {
     public ArrayList<ArrayList<Integer>> combinationSum(ArrayList<Integer> A, int B)
     {

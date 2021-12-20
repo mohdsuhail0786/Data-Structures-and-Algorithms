@@ -10,7 +10,7 @@ public class Subsets_of_an_array {
     public static void main(String[] args) {
         Scanner scan=new Scanner(System.in);
         int n=scan.nextInt();
-        Solution obj = new Solution();
+        Solution_subsets_of_array obj = new Solution_subsets_of_array();
         List<List<Integer>> allSubsets = new ArrayList<>();
         int[] arr=new int[n];
         for(int i=0;i<n;i++){
@@ -27,7 +27,7 @@ public class Subsets_of_an_array {
  * include the current element or not to include the current element
  */
 
-class Solution {
+class Solution_subsets_of_array {
     public List<List<Integer>> subsets(int[] nums) {
         List<List<Integer>> result = new ArrayList<>();
         helper(nums,0,result,new ArrayList<>());

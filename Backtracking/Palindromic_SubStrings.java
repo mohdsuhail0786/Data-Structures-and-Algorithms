@@ -9,7 +9,7 @@ public class Palindromic_SubStrings{
     public static void main(String[] args) {
         Scanner scan=new Scanner(System.in);
         String s=scan.next();
-        Solution obj = new Solution();
+        Solution_palindromic_substring obj = new Solution_palindromic_substring();
         int result=obj.countSubstrings(s);
         System.out.println("Number of palindromic substrings: "+result);
         scan.close();
@@ -26,7 +26,7 @@ public class Palindromic_SubStrings{
  * TC ==> O(n^2) && SC ==> O(1)
  */
 
-class Solution {
+class Solution_palindromic_substring {
     public int countSubstrings(String s) {
         int n=s.length();
         int count=0;

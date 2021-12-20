@@ -17,7 +17,7 @@ public class Rat_in_a_maze {
     public static void main(String[] args) {
         Scanner scan=new Scanner(System.in);
         int n=scan.nextInt();
-        Solution obj = new Solution();
+        Solution_rat_in_a_maze obj = new Solution_rat_in_a_maze();
         ArrayList<String> solutions = new ArrayList<>();
         int[][] mat=new int[n][n];
         for(int i=0;i<n;i++){
@@ -36,7 +36,7 @@ public class Rat_in_a_maze {
  * and make a account of visited node also so that one should not revisit them.
  */
 
-class Solution {
+class Solution_rat_in_a_maze {
     public ArrayList<String> findPath(int[][] m, int n) {
         ArrayList<String> result = new ArrayList<>();
         if(n==0 || m[0][0]==0)

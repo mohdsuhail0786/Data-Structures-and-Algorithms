@@ -17,7 +17,7 @@ public class Tug_Of_War {
 		for (int i = 0; i < arr.length; i++) {
 			arr[i] = scan.nextInt();
 		}
-        Solution obj=new Solution();
+        Solution_tug_of_war obj=new Solution_tug_of_war();
 		String result=obj.findTwoSets(arr);
 		System.out.println("The two sets are: "+result);
         scan.close();
@@ -29,7 +29,7 @@ public class Tug_Of_War {
  * and calculate the diff of sum of the two sets and take the sets with minimum sum
  */
 
-class Solution {
+class Solution_tug_of_war {
 
     private String ans="";
     private int mindiff=Integer.MAX_VALUE;
