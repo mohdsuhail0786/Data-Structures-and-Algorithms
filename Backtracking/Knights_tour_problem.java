@@ -12,6 +12,7 @@ public class Knights_tour_problem{
 
         int n=scan.nextInt();
         int[][] pathMat = new int[n][n];
+        //visited matrix
         for(int i=0;i<n;i++) Arrays.fill(pathMat[i], -1);
         pathMat[0][0]=0;
         
