@@ -1,5 +1,11 @@
 import java.util.*;
 
+/**GFG
+ * Given a N*N board with the Knight placed on the first block of an empty board.
+ * Moving according to the rules of chess knight must visit each square exactly once.
+ * Print the order of each cell in which they are visited.
+ */
+
 public class Knights_tour_problem{
     public static void main(String[] args) {
         Scanner scan=new Scanner(System.in);
@@ -16,6 +22,12 @@ public class Knights_tour_problem{
     }
 }
 
+/**APPROACH
+ * same as n-queen problem and rat in a maze.
+ * simply find the directions of the knight and try each possible one
+ * and when first combination found then simply print and return from recursion
+ */
+
 class Solution_for_knights_tour{
     public boolean findPathOfTheKnight(int x,int y,int n,int[][] mat){
         if(mat[x][y]==(n*n)-1){
@@ -27,8 +39,9 @@ class Solution_for_knights_tour{
             return true;
         }
         else{
-            int dx[] = { 2, 1, -1, -2, -2, -1, 1, 2 };
-            int dy[] = { 1, 2, 2, 1, -1, -2, -2, -1 };
+            // DR,RD,RU,UR,UL,LU,LD,DL
+            int dx[] = {2,1,-1,-2,-2,-1, 1, 2};
+            int dy[] = {1,2, 2, 1,-1,-2,-2,-1};
             for(int i=0;i<8;i++){
                 int new_x=x+dx[i];
                 int new_y=y+dy[i];
