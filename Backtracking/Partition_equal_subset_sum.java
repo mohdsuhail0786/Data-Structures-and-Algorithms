@@ -3,7 +3,7 @@
  * check if it can be partitioned into two parts such that the sum of elements in both parts is the same.
  * 
  * Input: n=3 arr=[1,2,1]
- * Output: YES
+ * Output: YES {1,1} {2}
  * 
  * Input: n=5 arr=[3,5,2,6,1]
  * Output: NO
@@ -12,7 +12,7 @@
 public class Partition_equal_subset_sum {
     public static void main(String[] args) {
         int n = 4;
-        int[] arr={1,5,11,5};
+        int[] arr={1,5,11,5}; //{1,5,5} {11}
         Solution_partion_equal_subset_sum obj=new Solution_partion_equal_subset_sum();
         int result=obj.equalPartition(n, arr);
         if(result==1) 
