@@ -10,15 +10,17 @@ public class Knights_tour_problem{
     public static void main(String[] args) {
         Scanner scan=new Scanner(System.in);
 
-        int n=scan.nextInt();
+        int n=5;
         int[][] pathMat = new int[n][n];
         //visited matrix
         for(int i=0;i<n;i++) Arrays.fill(pathMat[i], -1);
         pathMat[0][0]=0;
         
         Solution_for_knights_tour obj=new Solution_for_knights_tour();
-        obj.findPathOfTheKnight(0,0,n,pathMat);
-        
+        boolean res=obj.findPathOfTheKnight(0,0,n,pathMat);
+        if(!res)
+            System.out.println("No Solution exists");
+
         scan.close();
     }
 }
@@ -61,13 +63,5 @@ class Solution_for_knights_tour{
                 return true;
         else    
             return false;
-    }
-
-    public boolean allFilled(int[][] mat,int n){
-        for(int i=0;i<n;i++)
-            for(int j=0;j<n;j++)
-                if(mat[i][j]==-1)
-                    return false;
-        return true;
     }
 }
