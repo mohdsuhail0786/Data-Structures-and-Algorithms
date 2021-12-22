@@ -1,4 +1,3 @@
-import java.util.*;
 /**
  * count number of palindromic substrings of a given string
  * Input="aaa"
@@ -7,12 +6,10 @@ import java.util.*;
 
 public class Palindromic_SubStrings{
     public static void main(String[] args) {
-        Scanner scan=new Scanner(System.in);
-        String s=scan.next();
+        String s="baab";
         Solution_palindromic_substring obj = new Solution_palindromic_substring();
         int result=obj.countSubstrings(s);
         System.out.println("Number of palindromic substrings: "+result);
-        scan.close();
     }
 }
 
