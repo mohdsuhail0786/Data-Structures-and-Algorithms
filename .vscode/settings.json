@@ -1,3 +1,9 @@
 {
-  "java.project.sourcePaths": ["Stack_Queue_Heap", "Backtracking", "BinaryTree","Arrays","Interviews"]
+  "java.project.sourcePaths": [
+    "StackQueueHeap",
+    "Interviews",
+    "BinaryTree",
+    "Backtracking",
+    "SearchingAndSorting"
+  ]
 }
