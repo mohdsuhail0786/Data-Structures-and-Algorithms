@@ -1,9 +1,10 @@
 {
   "java.project.sourcePaths": [
     "StackQueueHeap",
+    "SearchingAndSorting",
     "Interviews",
     "BinaryTree",
     "Backtracking",
-    "SearchingAndSorting"
+    "DynamicProgramming"
   ]
 }
