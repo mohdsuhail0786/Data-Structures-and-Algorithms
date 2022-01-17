@@ -3,8 +3,10 @@
     "StackQueueHeap",
     "SearchingAndSorting",
     "Interviews",
+    "DynamicProgramming",
     "BinaryTree",
     "Backtracking",
-    "DynamicProgramming"
+    "Arrays",
+    "LinkedList"
   ]
 }
