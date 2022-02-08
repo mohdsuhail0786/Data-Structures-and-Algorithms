@@ -2,11 +2,13 @@
   "java.project.sourcePaths": [
     "StackQueueHeap",
     "SearchingAndSorting",
+    "Pattern",
+    "LinkedList",
     "Interviews",
     "DynamicProgramming",
     "BinaryTree",
     "Backtracking",
     "Arrays",
-    "LinkedList"
+    ""
   ]
 }
